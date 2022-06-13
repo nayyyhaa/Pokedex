@@ -1,3 +1,4 @@
+import "./navbar.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchIp } from "redux/reducers/searchSlice";
@@ -9,12 +10,14 @@ export const Navbar = () => {
   return (
     <>
       <h1 className="centered-text">PokeDex</h1>
-      <input
-        type="text"
-        value={userIp}
-        onChange={(e) => setUserIp(e.target.value)}
-      />
-      <button onClick={() => dispatch(setSearchIp(userIp))}>search</button>
+      <div className="nav-actions">
+        <input
+          type="text"
+          value={userIp}
+          onChange={(e) => setUserIp(e.target.value)}
+        />
+        <button onClick={() => dispatch(setSearchIp(userIp))}>search</button>
+      </div>
     </>
   );
 };

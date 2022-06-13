@@ -27,13 +27,21 @@ export const getPokemons = createAsyncThunk(
   async (currentUrl) => {
     try {
       const res = await fetch(currentUrl);
-      const poke = await res.json();
-      return poke;
+      return await res.json();
     } catch (err) {
       console.error("Error in getting pokemons");
     }
   }
 );
+
+export const getPokemonById = async (id) => {
+  try {
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`);
+    return await res.json();
+  } catch (err) {
+    console.error("Error in getting pokemon by id");
+  }
+};
 
 const pokemonSlice = createSlice({
   name: "pokemons",

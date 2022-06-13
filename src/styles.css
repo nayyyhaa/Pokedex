@@ -41,4 +41,9 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: rgb(111, 167, 0);
 }

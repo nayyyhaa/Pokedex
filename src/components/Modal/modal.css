@@ -1,0 +1,34 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 131, 131, 0.4);
+  z-index: 11;
+  overflow: auto;
+  display: none;
+  opacity: 0;
+}
+
+.modal {
+  position: relative;
+  min-height: 50vh;
+  height: fit-content;
+  width: 90%;
+  max-width: 40rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+}
+
+.modal-wrapper.show-modal {
+  display: grid;
+  opacity: 1;
+}
+
+.modal-close-btn {
+  position: relative;
+  left: 44%;
+}
