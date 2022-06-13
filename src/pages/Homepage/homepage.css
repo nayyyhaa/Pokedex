@@ -1,0 +1,16 @@
+.homepage {
+  width: 90%;
+  margin: 5rem auto;
+  background: lightgreen;
+  border-radius: 1rem;
+}
+
+.pokemon-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.searched-text {
+  margin: 1rem;
+  text-align: center;
+}
