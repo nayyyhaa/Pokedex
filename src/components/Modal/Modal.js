@@ -27,10 +27,11 @@ export const Modal = ({ modalData, setModalData }) => {
           <div className="modal-description">
             <p>Id: {currPokemon?.id}</p>
             <p>Name: {currPokemon?.name}</p>
+            <p>Type: {currPokemon?.types?.[0]?.type?.name}</p>
             <p>
               Abilities:{" "}
-              {currPokemon?.abilities?.map((ab) => (
-                <span>{ab.ability.name}, </span>
+              {currPokemon?.abilities?.map((ab, idx) => (
+                <span key={idx}>{ab.ability.name}, </span>
               ))}
             </p>
           </div>

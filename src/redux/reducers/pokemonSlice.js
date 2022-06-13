@@ -43,6 +43,16 @@ export const getPokemonById = async (id) => {
   }
 };
 
+export const getAllPokemonsByTypes = async () => {
+  try {
+    const res = await fetch(`https://pokeapi.co/api/v2/type`);
+    const types = await res.json();
+    return types.results;
+  } catch (err) {
+    console.error("Error in getting pokemon by types");
+  }
+};
+
 const pokemonSlice = createSlice({
   name: "pokemons",
   initialState: initialState,
