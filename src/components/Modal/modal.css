@@ -28,7 +28,10 @@
   opacity: 1;
 }
 
-.modal-close-btn {
-  position: relative;
-  left: 44%;
+.modal-data {
+  justify-content: start;
+}
+
+.modal-data > * {
+  margin: 1rem;
 }
