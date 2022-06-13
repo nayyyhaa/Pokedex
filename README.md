@@ -1,2 +1,3 @@
-# po
-Created with CodeSandbox
+# Pokedex
+
+Pokedex App made using ReactJS
