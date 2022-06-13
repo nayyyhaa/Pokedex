@@ -1,7 +1,7 @@
 .homepage {
   width: 90%;
   margin: 5rem auto;
-  background: lightgreen;
+  background: rgb(204, 250, 204);
   border-radius: 1rem;
 }
 
@@ -11,6 +11,6 @@
 }
 
 .searched-text {
-  margin: 1rem;
+  padding: 1rem;
   text-align: center;
 }

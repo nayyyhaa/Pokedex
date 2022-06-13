@@ -33,6 +33,9 @@ export const Homepage = () => {
           <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
+      {searchIp && pokemonsList.length === 0 && (
+        <p className="centered-text p-1">No data found!</p>
+      )}
       {!searchIp && <Pagination prevUrl={prevUrl} nextUrl={nextUrl} />}
     </div>
   );
