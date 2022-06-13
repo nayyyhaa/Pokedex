@@ -29,7 +29,7 @@
 }
 
 .modal-data {
-  justify-content: start;
+  justify-content: space-evenly !important;
 }
 
 .modal-data > * {

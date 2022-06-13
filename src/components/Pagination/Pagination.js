@@ -7,7 +7,7 @@ export const Pagination = ({ prevUrl, nextUrl }) => {
     <div className="flex-row">
       {prevUrl && (
         <button
-          className="m-1"
+          className="full-wd m-1"
           onClick={() => dispatch(setUrl({ url: prevUrl, count: -1 }))}
         >
           prev
@@ -15,7 +15,7 @@ export const Pagination = ({ prevUrl, nextUrl }) => {
       )}
       {nextUrl && (
         <button
-          className="m-1"
+          className="full-wd m-1"
           onClick={() => dispatch(setUrl({ url: nextUrl, count: 1 }))}
         >
           next
